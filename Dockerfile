@@ -1,4 +1,4 @@
-FROM node
+FROM node:lts-stretch-slim
 
 WORKDIR /app
 
@@ -12,4 +12,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD npm run test
+CMD npm run dev
